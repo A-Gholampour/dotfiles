@@ -1,2 +1,7 @@
---target=~/
+# target اصلی همه package ها = HOME
+--target=$HOME
+
+# فایل‌هایی که خود stow باید نادیده بگیرد
 --ignore=.stowrc
+--ignore=setup.sh
+--ignore=.git
