@@ -1,0 +1,10 @@
+# cache / runtime
+*.log
+*.tmp
+*.cache
+
+# app runtime data
+clipboard_history.json
+tmp_files/
+cache/
+Cache/
