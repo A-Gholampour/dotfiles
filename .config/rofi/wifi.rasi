@@ -1,0 +1,17 @@
+configuration {
+    font: "Roboto 12";
+    border: 2;
+    border-radius: 8;
+    padding: 6;
+    width: 30%;          /* پنجره کوچک و مینیمال */
+    lines: 10;           /* تعداد خطوط منو */
+    background: #14161A; /* مشابه Waybar background */
+    foreground: #FFFFFF;
+    selected-background: #64727D;
+    selected-foreground: #FFFFFF;
+    element-padding: 6;
+    element-border: 0;
+    scrollbar-width: 6;
+    scrollbar-color: #2980b9;
+    opacity: 95;         /* نیمه شفاف */
+}

@@ -1,0 +1,7 @@
+[core]
+	autocrlf = input
+[user]
+	name = Amir-H Gholampour
+	email = gholampour.ah81@gmail.com
+[credential]
+	helper = store

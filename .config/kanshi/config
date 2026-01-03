@@ -1,0 +1,31 @@
+# Kanshi configuration for automatic monitor management
+# This file automatically switches monitor configurations based on connected displays
+
+# Single monitor profile (laptop only)
+profile laptop {
+    output "eDP-1" mode 1920x1200@165.01 position 0,0 scale 1
+}
+
+# Dual monitor profile (current setup with Samsung ultrawide)
+profile ultrawide_dual {
+    output "eDP-1" mode 1920x1200@165.01 position 0,563 scale 1
+    output "DP-3" mode 3440x1440@119.96 position 1920,434 scale 1
+}
+
+# Samsung ultrawide only (disable laptop screen)
+profile ultrawide_only {
+    output "eDP-1" disable
+    output "DP-3" mode 3440x1440@175 position 0,0 scale 1
+}
+
+# Gaming mode (2560x1440 with max refresh rate - 175Hz)
+profile gaming {
+    output "eDP-1" disable
+    output "DP-3" mode 2560x1440@175 position 0,0 scale 1
+}
+
+# Ultra performance mode (try to force 175Hz on ultrawide)
+profile ultra_performance {
+    output "eDP-1" disable  
+    output "DP-3" mode 3440x1440@175 position 0,0 scale 1
+}
